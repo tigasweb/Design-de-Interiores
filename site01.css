@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    padding: min(2vh, 4rem); /*ajustando o padding para ser mais flexível  */
+    background-color:#0a0a0a ;
+    width: 100%; /*Colocamos a largura para 100% do espaço disponivel*/
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+   /*Aqui começamos o posicionamento do Header*/
+  position: sticky;/*pocionamento do Header usando styck, sendo um posicionamento fixo, porem distinto do fixed*/
+  top: 0; /*Espaçamento superior zerado, fazendo com que o header fique grudado ao top*/
+  left: 0;/*Espaçamento a esquerda zerado, fazendo com o que o header fique grudado á esquerda*/
+  z-index: 999;/*Eixo de profundidade
+  (Eixo Carteziano)*/
+  box-shadow: 0 0.21rem 0.5rem white; /*Primeiro valor sombra na Direita (0)
+  segundo valor sombra Bottom (0.21rem)
+  terceiro valor gradiant da sombra (0.5rem)
+  */
+
+}
+
+header img {
+    width: 80px;
+}
+
+header button {
+    width: 13rem;
+    height: 1.5rem;
+    background-color:aliceblue ;
+    border-radius: 1rem;
+    padding: 1.3rem;
+    color: rgb(98, 4, 250);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 70px;
+
+}
+
+.section-01 {
+    background: linear-gradient(180deg, rgba(82, 74, 74, 0.753) 8.33%, rgba(0, 0, 0, 0.658) 100%), url(imagens/furniture-998265.jpg);
+   background-position: center;
+   background-attachment: fixed;
+   background-repeat: no-repeat;
+   background-size: cover;
+   width: 100%;
+   padding: min(100vh, 20rem);
+   
+}
+
+
+
+.section-01 h1 {
+    color: white;
+    font-size: 2em;
+    margin-bottom: 20px;
+    margin-right: 50px;
+    
+    
+}
+
+.section-01 button {
+    width: 13rem;
+    height: 1.5rem;
+    background-color:aliceblue ;
+    border-radius: 1rem;
+    padding: 1.3rem;
+    color: rgb(98, 4, 250);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 70px;
+
+
+}
+
+.section-02 {
+    background-color: rgb(212, 240, 241);
+    width: 100%;
+    padding: min(20vh, 6rem);
+
+}
