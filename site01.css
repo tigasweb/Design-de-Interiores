@@ -82,8 +82,163 @@ header button {
 }
 
 .section-02 {
-    background-color: rgb(212, 240, 241);
+    background-color: rgb(255, 255, 255);
     width: 100%;
     padding: min(20vh, 6rem);
 
+}
+.divh2{
+    width: 999px;
+    margin-left: 70px;
+   
+
+}
+
+.section-02 h2 {
+ font-size: 3em;
+ color: #0a0a0a;
+ text-align: center;
+ padding: 50px;
+ margin-bottom: 50px;
+ 
+ 
+ 
+
+
+}
+ hr {
+    width: 70px;
+    margin-left: 450px;
+    color: rgb(0, 0, 0);
+    margin-bottom: 30px;
+
+}
+
+.section-02 p {
+    font-size: 2em;
+    color: #0a0a0a;
+ 
+}
+
+.div1p {
+    width: 999px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    padding: 50px;   
+    margin-left: 50px;    
+   
+}
+
+.section-03 {
+    background-color: rgb(235, 231, 231);
+    width: 100%;
+    padding: min(20vh, 6rem);
+}
+
+.section-03 h2 {
+    font-size: 2.5em;
+ color: #0a0a0a;
+ text-align: center;
+ padding: 50px;
+ margin-bottom: 50px;
+ 
+}
+.div2h2 {
+    width: 990px;
+    padding: 50px;   
+    margin-left: 50px;    
+   
+}
+
+.div-pai {
+    height: 50vh;
+    width:80vw;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;  
+  gap: 20px;
+}
+.div-pai02 {
+  
+    width:80vw;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; 
+  gap: 20px;
+  
+
+
+}
+
+.box {
+  background-color: #0a0a0a;
+  padding: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 16vh;
+  
+  
+  
+}
+
+.div-filho01 {
+    background-image: url(imagens/ai-generated-8944692.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.div-filho02 {
+    background-image: url(imagens/bedroom-8501756.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.div-filho03 {
+    background-image: url(imagens/dining-area-9011242.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.div-filho04 {
+    background-image: url(imagens/furniture-2453307.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.div-filho05 {
+    background-image: url(imagens/living-room-8501837.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.div-filho06 {
+    background-image: url(imagens/interior-3804129.jpg);
+    background-position: center;
+    background-size: cover;
+} 
+
+.section-03 button {
+    width: 13rem;
+    height: 1.5rem;
+    background-color:aliceblue ;
+    border-radius: 1rem;
+    padding: 1.3rem;
+    color: rgb(98, 4, 250);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 70px;
+}
+
+.div-button {
+    display: flex;
+    justify-content: space-evenly;
+    align-items:center;
+    margin-top: 50px;
+    margin-right: 190px;
+   
 }
