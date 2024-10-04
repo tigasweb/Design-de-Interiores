@@ -320,10 +320,7 @@ footer img {
     }
 
     .box {
-        flex-direction: column;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+      
 
 
     }
@@ -353,4 +350,6 @@ footer img {
 
 
     }
+
+    .box
 }
