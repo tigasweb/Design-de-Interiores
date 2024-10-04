@@ -1,25 +1,33 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 header {
-    padding: min(2vh, 4rem); /*ajustando o padding para ser mais flexível  */
-    background-color:#0a0a0a ;
-    width: 100%; /*Colocamos a largura para 100% do espaço disponivel*/
+    padding: min(2vh, 4rem);
+    /*ajustando o padding para ser mais flexível  */
+    background-color: #0a0a0a;
+    width: 100%;
+    /*Colocamos a largura para 100% do espaço disponivel*/
 
     display: flex;
     justify-content: space-between;
     align-items: center;
 
 
-   /*Aqui começamos o posicionamento do Header*/
-  position: sticky;/*pocionamento do Header usando styck, sendo um posicionamento fixo, porem distinto do fixed*/
-  top: 0; /*Espaçamento superior zerado, fazendo com que o header fique grudado ao top*/
-  left: 0;/*Espaçamento a esquerda zerado, fazendo com o que o header fique grudado á esquerda*/
-  z-index: 999;/*Eixo de profundidade
+    /*Aqui começamos o posicionamento do Header*/
+    position: sticky;
+    /*pocionamento do Header usando styck, sendo um posicionamento fixo, porem distinto do fixed*/
+    top: 0;
+    /*Espaçamento superior zerado, fazendo com que o header fique grudado ao top*/
+    left: 0;
+    /*Espaçamento a esquerda zerado, fazendo com o que o header fique grudado á esquerda*/
+    z-index: 999;
+    /*Eixo de profundidade
   (Eixo Carteziano)*/
-  box-shadow: 0 0.21rem 0.5rem white; /*Primeiro valor sombra na Direita (0)
+    box-shadow: 0 0.21rem 0.5rem white;
+    /*Primeiro valor sombra na Direita (0)
   segundo valor sombra Bottom (0.21rem)
   terceiro valor gradiant da sombra (0.5rem)
   */
@@ -33,7 +41,7 @@ header img {
 header button {
     width: 13rem;
     height: 1.5rem;
-    background-color:aliceblue ;
+    background-color: aliceblue;
     border-radius: 1rem;
     padding: 1.3rem;
     color: rgb(98, 4, 250);
@@ -46,13 +54,13 @@ header button {
 
 .section-01 {
     background: linear-gradient(180deg, rgba(82, 74, 74, 0.753) 8.33%, rgba(0, 0, 0, 0.658) 100%), url(imagens/furniture-998265.jpg);
-   background-position: center;
-   background-attachment: fixed;
-   background-repeat: no-repeat;
-   background-size: cover;
-   width: 100%;
-   padding: min(100vh, 20rem);
-   
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    padding: min(30vh, 20rem);
+
 }
 
 
@@ -62,128 +70,127 @@ header button {
     font-size: 2em;
     margin-bottom: 20px;
     margin-right: 50px;
-    
-    
+
+
 }
 
 .section-01 button {
     width: 13rem;
     height: 1.5rem;
-    background-color:aliceblue ;
+    background-color: aliceblue;
     border-radius: 1rem;
     padding: 1.3rem;
     color: rgb(98, 4, 250);
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-right: 70px;
 
 
+
+}
+
+button:hover {
+    transition: 0.8s;
+    background-color: #4b4848;
+    color: white;
 }
 
 .section-02 {
     background-color: rgb(255, 255, 255);
     width: 100%;
-    padding: min(20vh, 6rem);
-
+    padding: min(30vh, 6rem);
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
 }
-.divh2{
-    width: 999px;
-    margin-left: 70px;
-   
 
-}
+.divh2 {}
+
+
 
 .section-02 h2 {
- font-size: 3em;
- color: #0a0a0a;
- text-align: center;
- padding: 50px;
- margin-bottom: 50px;
- 
- 
- 
+    font-size: 3em;
+    color: #0a0a0a;
+    text-align: center;
+    margin: 5rem;
+
+
+
 
 
 }
- hr {
-    width: 70px;
-    margin-left: 450px;
-    color: rgb(0, 0, 0);
-    margin-bottom: 30px;
+
+hr {
+    width: 50%;
+    margin: 4rem auto;
 
 }
 
 .section-02 p {
     font-size: 2em;
     color: #0a0a0a;
- 
+
 }
 
-.div1p {
-    width: 999px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 30px;
-    padding: 50px;   
-    margin-left: 50px;    
-   
-}
+
 
 .section-03 {
     background-color: rgb(235, 231, 231);
     width: 100%;
-    padding: min(20vh, 6rem);
+    padding: min(30vh, 6rem);
 }
 
 .section-03 h2 {
     font-size: 2.5em;
- color: #0a0a0a;
- text-align: center;
- padding: 50px;
- margin-bottom: 50px;
- 
+    color: #0a0a0a;
+    text-align: center;
+    padding: 50px;
+    margin-bottom: 50px;
+
 }
-.div2h2 {
-    width: 990px;
-    padding: 50px;   
-    margin-left: 50px;    
-   
+
+.div-button button:hover {
+    transition: 0.8s;
+    background-color: #4b4848;
+    color: white;
 }
+
+
+.div2h2 {}
 
 .div-pai {
     height: 50vh;
-    width:80vw;
+    width: 80vw;
     display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;  
-  gap: 20px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
 }
+
 .div-pai02 {
-  
-    width:80vw;
+
+    width: 80vw;
     display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap; 
-  gap: 20px;
-  
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+
 
 
 }
 
 .box {
-  background-color: #0a0a0a;
-  padding: 100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 16vh;
-  
-  
-  
+    background-color: #0a0a0a;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 16vh;
+
+
+
 }
 
 .div-filho01 {
@@ -209,6 +216,7 @@ header button {
     background-position: center;
     background-size: cover;
 }
+
 .div-filho05 {
     background-image: url(imagens/living-room-8501837.jpg);
     background-position: center;
@@ -219,12 +227,12 @@ header button {
     background-image: url(imagens/interior-3804129.jpg);
     background-position: center;
     background-size: cover;
-} 
+}
 
 .section-03 button {
     width: 13rem;
     height: 1.5rem;
-    background-color:aliceblue ;
+    background-color: aliceblue;
     border-radius: 1rem;
     padding: 1.3rem;
     color: rgb(98, 4, 250);
@@ -237,8 +245,112 @@ header button {
 .div-button {
     display: flex;
     justify-content: space-evenly;
-    align-items:center;
+    align-items: center;
     margin-top: 50px;
     margin-right: 190px;
+
+}
+
+
+
+footer {
+    padding: min(2vh, 4rem);
+    /*ajustando o padding para ser mais flexível  */
+    background-color: #0a0a0a;
+    width: 100%;
+    /*Colocamos a largura para 100% do espaço disponivel*/
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer img {
+    width: 5vw;
+}
+
+.whatsapp {
+    position: relative;
+    /*perimite que elementos posicionados dentro da classe sejam posicionados em relação a ela*/
+
+
+}
+
+/*Estilaza a imagem dentro da classe "whatsapp"*/
+.whatsapp img {
+    position: fixed;
+    /*Mantém a imagem em uma posição fixa na tela, mesmo ao rolar a página  */
+    bottom: 20px;
+    /*Define a distância da imagem em relação à parte inferior da tela*/
+    right: 20px;
+    /*Define a distância da imagem em relação à direita da tela*/
+    width: 3rem;
+    /*Define a largura da imagem como 5 unidades de rem (relativas ao tamanho da fonte)*/
+    height: auto;
+    /* Ajustar a altura da imagem automaticamente para manter a proporção */
+}
+
+
+@media (max-width: 830px) {
+
+
+    .div1p {
+        width: 2em;
+
+    }
+
+    .section-02 .divh2 {
+      text-align: center;
+
+
+    }
    
+
+    .section-02 h2 {
+        font-size: 2rem;
+       
+
+    }
+
+    .section-02 p {
+        font-size: 2rem;
+        padding: 2rem;
+        min-width: 80vw;
+        margin-left: -2rem;
+    }
+
+    .box {
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+
+    }
+
+
+    .whatsapp img {
+        width: 3.5rem;
+    }
+
+    .section-01 h1 {
+        text-align: left;
+        font-size: 2em;
+        min-width: 70vw;
+
+    }
+    .section-01 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    
+
+    .section-01 .div-h1 {
+        line-height: 2em;
+
+
+    }
 }
