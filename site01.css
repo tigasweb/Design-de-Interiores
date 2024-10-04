@@ -80,7 +80,7 @@ header button {
     background-color: aliceblue;
     border-radius: 1rem;
     padding: 1.3rem;
-    color: rgb(98, 4, 250);
+    color: rgb(0, 0, 0);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -159,8 +159,8 @@ hr {
 .div2h2 {}
 
 .div-pai {
-    height: 50vh;
-    width: 80vw;
+    height: 110vh;
+    width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -169,13 +169,13 @@ hr {
 }
 
 .div-pai02 {
-
+    height: 110vh;
     width: 80vw;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 20px;
+   
 
 
 
@@ -183,11 +183,12 @@ hr {
 
 .box {
     background-color: #0a0a0a;
-    padding: 100px;
+    padding: 110px;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 16vh;
+  
 
 
 
@@ -235,7 +236,7 @@ hr {
     background-color: aliceblue;
     border-radius: 1rem;
     padding: 1.3rem;
-    color: rgb(98, 4, 250);
+    color: rgb(0, 0, 0);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -292,39 +293,15 @@ footer img {
 
 
 @media (max-width: 830px) {
-
-
-    .div1p {
-        width: 2em;
-
-    }
-
-    .section-02 .divh2 {
-      text-align: center;
-
-
-    }
-   
-
-    .section-02 h2 {
-        font-size: 2rem;
+      header button {
+        width: 180px;
+        font-size: 1.1em;
        
+      }
 
-    }
-
-    .section-02 p {
-        font-size: 2rem;
-        padding: 2rem;
-        min-width: 80vw;
-        margin-left: -2rem;
-    }
-
-    .box {
-      
-
-
-    }
-
+      header img {
+        width: 15vw;
+      }
 
     .whatsapp img {
         width: 3.5rem;
@@ -343,6 +320,12 @@ footer img {
         flex-direction: column;
     }
 
+    .section-01 button {
+        width: 200px;
+        font-size: 1.3em;
+        margin-left: -80px;
+    }
+
     
 
     .section-01 .div-h1 {
@@ -351,5 +334,78 @@ footer img {
 
     }
 
-    .box
+   .divh2{
+    min-width: 100vw;
+    text-align: center;
+   }
+
+
+    .div1p {
+        width: 2em;
+        text-align: center;
+        margin-left:-230px ;
+
+
+    }
+
+    .section-02 .divh2 {
+      text-align: center;
+
+
+    }
+
+    .section-02 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+    }
+   
+
+    .section-02 h2 {
+        font-size: 2rem;
+       
+
+    }
+
+    .section-02 p {
+        font-size: 2rem;
+        padding: 2rem;
+        min-width: 90vw;
+        margin-left: -2rem;
+        
+    }
+
+   .section-03 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   }
+
+   .div-pai {
+     line-height: 50px;
+   }
+    
+   .div-button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 250px;
+    width: 400px;
+   
+
+   }  
+
+   footer img {
+    width: 15vw;
+   }
+  
+  
+
+   
+
+
+  
 }
