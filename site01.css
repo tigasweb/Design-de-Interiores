@@ -2,17 +2,75 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
 }
+
+.mobile-menu { /*Estilização da caixa Mobile quando aberta*/
+    display: none; /*Display: Nenhum*/
+    position: fixed; /*Posição fixa na parte direita da página*/
+    top: 0; /*Superior em 0 fazendo a caixa encostar ao topo*/
+    right: 0; /*Direita em 0 fazendo a caixa encostar a direita*/
+    width: 60%; /*Largura em porcentagem da caixa*/
+    height: 100%; /*Altura de 100% da tela*/
+    background-color: rgb(0, 0, 0); /*Cor de fundo*/
+    flex-direction: column; /*direção dos itens dentro da caixa */
+    align-items: center; /*Alinhamento na vertical do itens*/
+    font-size: 1.8rem; /*tamanho da letra dentro da caixa*/
+}
+
+.nav-links-mobile { /*Lista não ordenada da versão mobile*/
+    display: flex; /*Tornando os itens (LISTAS) flexíveis*/
+    flex-direction: column; /*Estamos direcionando o posicionamento dessas listas*/
+    text-align: end; /*Alinhando o texto ao centro*/
+    gap: 1.2rem; /*Espaço entre as listas */
+    /* width: 0%; Zeramos a largura podendo retirar essa linha para testar visualizão */
+    list-style: none; /*Estilo de lista desabilitado*/
+    /* padding: 0; Preenchimento zerado, podendo também ser retirado para testes */
+}
+
+.nav-links-mobile li { /*listas da versão Mobile*/
+    border-bottom: 1px solid #787272; /*Bordar inferior de cada lista*/
+    padding-bottom: 1.2rem; /*Tamanho da borda*/
+}
+
+
+
+
+.hamburger,
+.close {
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    display: none;
+}
+
+
+.close {
+    margin-top: 20px;
+    margin-right: 20px;
+    display: block;
+    align-self: end;
+}
+
+
+.flex {
+    display: flex;
+}
+
+
+
 
 header {
     padding: min(2vh, 4rem);
     /*ajustando o padding para ser mais flexível  */
-    background-color: #0a0a0a;
+    background-color: #9e9898;
     width: 100%;
     /*Colocamos a largura para 100% do espaço disponivel*/
 
     display: flex;
-    justify-content: space-between;
+    justify-content:space-around;
     align-items: center;
 
 
@@ -33,6 +91,22 @@ header {
   */
 
 }
+ 
+
+
+ 
+
+ header nav ul li {
+    color: white;
+   
+ }
+
+ header nav ul {
+    display: flex;
+    list-style: none;
+    gap: 15px;
+    
+ }
 
 header img {
     width: 80px;
@@ -104,7 +178,6 @@ button:hover {
     gap: 30px;
 }
 
-.divh2 {}
 
 
 
@@ -113,10 +186,6 @@ button:hover {
     color: #0a0a0a;
     text-align: center;
     margin: 5rem;
-
-
-
-
 
 }
 
@@ -412,4 +481,52 @@ footer img {
 
 
   
+}
+
+@media(max-width: 834px) {
+
+    html {
+        font-size: 12px;
+    }
+
+    /* header img {
+        width: 10rem;
+        height: auto;
+        } */
+
+
+     
+    .nav-links {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+        
+    }
+
+    .mobile-menu {
+        z-index: 999;
+    }
+
+    #btn-header {
+       display: none;
+    }
+
+
+    .cad-mobile button {
+        width: 14rem;
+        height: 4rem;
+        border-radius: 5px;
+        background-color: #f8f4f46c;
+        color: #000000;
+    }
+
+
+
+    .cad-mobile button a {
+        text-decoration: none;
+        color: white;
+
+    }
 }
